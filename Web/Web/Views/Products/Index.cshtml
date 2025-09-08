@@ -1,0 +1,8 @@
+﻿@model IReadOnlyList<ApplicationCore.Entities.Product>
+<h1>Products</h1>
+<ul>
+    @foreach (var p in Model)
+    {
+        <li><a asp-controller="Products" asp-action="Details" asp-route-id="@p.Id">@p.Name</a> - @p.Price.ToString("C")</li>
+    }
+</ul>

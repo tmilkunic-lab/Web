@@ -1,0 +1,5 @@
+﻿@model ApplicationCore.Entities.Product
+<h1>@Model.Name</h1>
+<p>SKU: @Model.Sku</p>
+<p>Price: @Model.Price.ToString("C")</p>
+<p><a asp-controller="Products" asp-action="Index">Back</a></p>
